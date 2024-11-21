@@ -9,7 +9,7 @@ steps:
           limit: 1
         - exit_status: -10  # Agent was lost
           limit: 1
-    environment:
+    env:
       VLLM_USAGE_SOURCE: ci-test
       HF_HOME: /root/.cache/huggingface
       HF_TOKEN: "${HF_TOKEN}"
