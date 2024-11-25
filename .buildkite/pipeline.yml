@@ -3,5 +3,5 @@ steps:
     agents:
       queue: vllm-image
     commands:
-      - cat /proc/1/cgroup | grep 'name=' | cut -d'=' -f2
+      - echo $HOSTNAME
       - sleep 6000
