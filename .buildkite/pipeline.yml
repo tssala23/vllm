@@ -1,0 +1,6 @@
+steps:
+  - label: "Test launching vllm image"
+    agents:
+      queue: vllm-image
+    commands:
+      - sleep 6000
