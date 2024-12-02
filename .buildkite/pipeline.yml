@@ -1,5 +1,12 @@
 steps:
-  - label: "Test launching vllm image"
+  - label:
+    agents:
+      queue: default
+    commands:
+      - oc whoami
+      - oc get builds
+
+  - label: "Test launching vllm image" #image has already been build
     agents:
       queue: vllm-image
     commands:
